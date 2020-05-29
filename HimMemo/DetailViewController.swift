@@ -10,6 +10,8 @@ import UIKit
 
 class DetailViewController: UIViewController {
     
+    var memo: Memo? // 이전화면에서 전달된 메모가 전달
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -31,9 +33,11 @@ extension DetailViewController: UITableViewDataSource {
             
         case 0:
             let cell = tableView.dequeueReusableCell(withIdentifier: "memoCell", for: indexPath)
+            cell.textLabel?.text = memo?.content
             return cell
         case 1:
             let cell = tableView.dequeueReusableCell(withIdentifier: "dateCell", for: indexPath)
+            cell.textLabel?.text = memo?.fomatter.string(for: memo?.insertDate)
             return cell
             
         default:

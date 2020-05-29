@@ -31,6 +31,13 @@ class ComposeViewController: UIViewController {
         
         dismiss(animated: true, completion: nil)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
