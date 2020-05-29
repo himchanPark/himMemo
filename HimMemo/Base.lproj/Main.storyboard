@@ -106,8 +106,15 @@
                                 <action selector="cancelButton:" destination="SUl-fD-SI1" id="J7U-lr-LsY"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="jjb-c4-NeH"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="jjb-c4-NeH">
+                            <connections>
+                                <action selector="saveButton:" destination="SUl-fD-SI1" id="Sx4-rN-tW3"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="memeTextView" destination="xEK-eo-RBj" id="Dt7-6n-SCw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5di-Av-piP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
