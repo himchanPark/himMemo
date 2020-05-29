@@ -26,8 +26,9 @@ class MemoListTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
         let target = Memo.dummyMemoList[indexPath.row]
+        let tableDate = target.fomatter.string(from: target.insertDate)
         cell.textLabel?.text = target.content
-        cell.detailTextLabel?.text = target.insertDate.description
+        cell.detailTextLabel?.text = tableDate
         return cell
     }
 
