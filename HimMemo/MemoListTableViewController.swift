@@ -27,6 +27,7 @@ class MemoListTableViewController: UITableViewController {
         
         let target = Memo.dummyMemoList[indexPath.row]
         let tableDate = target.fomatter.string(from: target.insertDate)
+        
         cell.textLabel?.text = target.content
         cell.detailTextLabel?.text = tableDate
         return cell

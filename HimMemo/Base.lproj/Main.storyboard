@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -47,7 +48,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="힘메모" id="vLl-fH-DX5">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="jxe-sf-biE"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="jxe-sf-biE">
+                            <connections>
+                                <segue destination="YnD-HL-cZL" kind="presentation" id="Ren-V2-Gki"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HP5-yw-nOC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -69,6 +74,58 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="reh-Ww-Qlk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-730" y="119"/>
+        </scene>
+        <!--새 메모-->
+        <scene sceneID="gG7-S3-Fxh">
+            <objects>
+                <viewController id="SUl-fD-SI1" customClass="ComposeViewController" customModule="힘메모" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oGt-8T-rDX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="동해물과 백두산이" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xEK-eo-RBj">
+                                <rect key="frame" x="0.0" y="56" width="375" height="702"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="KWJ-JI-pCg" firstAttribute="trailing" secondItem="xEK-eo-RBj" secondAttribute="trailing" id="GNW-LM-jzH"/>
+                            <constraint firstAttribute="bottom" secondItem="xEK-eo-RBj" secondAttribute="bottom" id="Yxl-0g-IMz"/>
+                            <constraint firstItem="xEK-eo-RBj" firstAttribute="top" secondItem="KWJ-JI-pCg" secondAttribute="top" id="ftR-TD-qeB"/>
+                            <constraint firstItem="xEK-eo-RBj" firstAttribute="leading" secondItem="KWJ-JI-pCg" secondAttribute="leading" id="rLu-Mr-OqF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="KWJ-JI-pCg"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="새 메모" id="o0G-w4-Dfb">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="yXa-Ip-HJN"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="jjb-c4-NeH"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5di-Av-piP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1991.2" y="-519.45812807881771"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Eg4-yY-xuZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YnD-HL-cZL" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="E51-H3-lvU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="SUl-fD-SI1" kind="relationship" relationship="rootViewController" id="pRy-ek-UkV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KAB-wm-Gk9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1048.8" y="-519.45812807881771"/>
         </scene>
     </scenes>
 </document>
