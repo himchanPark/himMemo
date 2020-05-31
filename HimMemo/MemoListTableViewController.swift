@@ -30,6 +30,7 @@ class MemoListTableViewController: UITableViewController {
             }
         }
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -58,6 +59,10 @@ class MemoListTableViewController: UITableViewController {
         cell.detailTextLabel?.text = tableDate
         
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
     }
 
 }
