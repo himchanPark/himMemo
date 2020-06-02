@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Memo {
+class MemoModel {
     
     var content: String
     var insertDate: Date
@@ -28,8 +28,8 @@ class Memo {
     }
     
     static var dummyMemoList = [
-    Memo(content: "Lorem Ipsum"),
-    Memo(content: "스타벅스 커피")
+    MemoModel(content: "Lorem Ipsum"),
+    MemoModel(content: "스타벅스 커피")
     ]
 
 }

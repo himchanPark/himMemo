@@ -11,7 +11,8 @@
 		765D32AF2480F01B003167A7 /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765D32AE2480F01B003167A7 /* ComposeViewController.swift */; };
 		768734EB2481491B006EFCD7 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768734EA2481491B006EFCD7 /* UIViewController+Alert.swift */; };
 		768734ED24816704006EFCD7 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768734EC24816704006EFCD7 /* DetailViewController.swift */; };
-		76988930247EB4DF00404670 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7698892F247EB4DF00404670 /* Model.swift */; };
+		768EC19E2486304600A0E809 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768EC19D2486304600A0E809 /* DataManager.swift */; };
+		76988930247EB4DF00404670 /* MemoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7698892F247EB4DF00404670 /* MemoModel.swift */; };
 		76F3556A247CFAE800512015 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F35569247CFAE800512015 /* AppDelegate.swift */; };
 		76F3556C247CFAE800512015 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F3556B247CFAE800512015 /* SceneDelegate.swift */; };
 		76F35571247CFAE800512015 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76F3556F247CFAE800512015 /* Main.storyboard */; };
@@ -25,7 +26,8 @@
 		765D32AE2480F01B003167A7 /* ComposeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
 		768734EA2481491B006EFCD7 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
 		768734EC24816704006EFCD7 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		7698892F247EB4DF00404670 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		768EC19D2486304600A0E809 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		7698892F247EB4DF00404670 /* MemoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoModel.swift; sourceTree = "<group>"; };
 		76F35566247CFAE800512015 /* 힘메모.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "힘메모.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		76F35569247CFAE800512015 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76F3556B247CFAE800512015 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,10 +49,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		768EC19C2486301500A0E809 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				768EC19D2486304600A0E809 /* DataManager.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		7698892E247EB4C600404670 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				7698892F247EB4DF00404670 /* Model.swift */,
+				7698892F247EB4DF00404670 /* MemoModel.swift */,
 				768734EA2481491B006EFCD7 /* UIViewController+Alert.swift */,
 			);
 			path = Model;
@@ -75,6 +85,7 @@
 		76F35568247CFAE800512015 /* HimMemo */ = {
 			isa = PBXGroup;
 			children = (
+				768EC19C2486301500A0E809 /* Data */,
 				7698892E247EB4C600404670 /* Model */,
 				76F35569247CFAE800512015 /* AppDelegate.swift */,
 				76F3556B247CFAE800512015 /* SceneDelegate.swift */,
@@ -166,8 +177,9 @@
 				765D32AD247F9F9B003167A7 /* MemoListTableViewController.swift in Sources */,
 				765D32AF2480F01B003167A7 /* ComposeViewController.swift in Sources */,
 				76F3556C247CFAE800512015 /* SceneDelegate.swift in Sources */,
-				76988930247EB4DF00404670 /* Model.swift in Sources */,
+				76988930247EB4DF00404670 /* MemoModel.swift in Sources */,
 				768734EB2481491B006EFCD7 /* UIViewController+Alert.swift in Sources */,
+				768EC19E2486304600A0E809 /* DataManager.swift in Sources */,
 				768734ED24816704006EFCD7 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
