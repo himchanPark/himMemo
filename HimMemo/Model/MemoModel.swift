@@ -13,15 +13,6 @@ class MemoModel {
     var content: String
     var insertDate: Date
     
-    // 날짜 포매터
-    let fomatter: DateFormatter = {
-        let f = DateFormatter()
-        f.dateStyle = .short
-        f.timeStyle = .short
-        f.locale = Locale(identifier: "Ko-kr")
-        return f
-    }()
-    
     init(content: String) {
         self.content = content
         insertDate = Date()
