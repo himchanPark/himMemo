@@ -11,7 +11,7 @@
         <!--힘메모-->
         <scene sceneID="rcP-Vw-hHT">
             <objects>
-                <tableViewController id="LnS-sv-vsR" customClass="MemoListTableViewController" customModule="힘메모" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="LnS-sv-vsR" customClass="MemoListTableViewController" customModule="himMemo" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="cxQ-DC-bVg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -67,7 +67,7 @@
             <objects>
                 <navigationController id="TrV-mv-ccI" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="pvy-Id-e3o">
-                        <rect key="frame" x="0.0" y="44" width="375" height="104.33333333333334"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -81,7 +81,7 @@
         <!--새 메모-->
         <scene sceneID="gG7-S3-Fxh">
             <objects>
-                <viewController id="SUl-fD-SI1" customClass="ComposeViewController" customModule="힘메모" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="SUl-fD-SI1" customClass="ComposeViewController" customModule="himMemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oGt-8T-rDX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -144,7 +144,7 @@
         <!--Detail View Controller-->
         <scene sceneID="YKE-51-QpR">
             <objects>
-                <viewController id="UKx-uh-CL6" customClass="DetailViewController" customModule="힘메모" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="UKx-uh-CL6" customClass="DetailViewController" customModule="himMemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="h9C-88-0ZF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -170,7 +170,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aaO-rw-NNE">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="메모 저장" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aaO-rw-NNE">
                                                     <rect key="frame" x="15" y="0.0" width="345" height="44"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>

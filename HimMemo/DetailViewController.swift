@@ -11,6 +11,16 @@ import UIKit
 class DetailViewController: UIViewController {
     
     var memo: Memo? // 이전화면에서 전달된 메모가 전달
+    
+    // 날짜 포매터
+    let fomatter: DateFormatter = {
+        let f = DateFormatter()
+        f.dateStyle = .short
+        f.timeStyle = .short
+        f.locale = Locale(identifier: "Ko-kr")
+        return f
+    }()
+    
     @IBOutlet weak var memoTableView: UITableView!
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -50,11 +60,11 @@ extension DetailViewController: UITableViewDataSource {
             
         case 0:
             let cell = tableView.dequeueReusableCell(withIdentifier: "memoCell", for: indexPath)
-            
+            cell.textLabel?.text = memo?.content
             return cell
         case 1:
             let cell = tableView.dequeueReusableCell(withIdentifier: "dateCell", for: indexPath)
-            
+            cell.textLabel?.text = fomatter.string(for: memo?.insertDate)
             return cell
             
         default:
