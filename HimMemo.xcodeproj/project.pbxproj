@@ -28,7 +28,7 @@
 		768734EC24816704006EFCD7 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		768EC19D2486304600A0E809 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		7698892F247EB4DF00404670 /* MemoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoModel.swift; sourceTree = "<group>"; };
-		76F35566247CFAE800512015 /* 힘메모.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "힘메모.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		76F35566247CFAE800512015 /* himMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = himMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76F35569247CFAE800512015 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76F3556B247CFAE800512015 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		76F35570247CFAE800512015 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -77,7 +77,7 @@
 		76F35567247CFAE800512015 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				76F35566247CFAE800512015 /* 힘메모.app */,
+				76F35566247CFAE800512015 /* himMemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -118,7 +118,7 @@
 			);
 			name = HimMemo;
 			productName = HimMemo;
-			productReference = 76F35566247CFAE800512015 /* 힘메모.app */;
+			productReference = 76F35566247CFAE800512015 /* himMemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -333,7 +333,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = damu.HimMemo;
-				PRODUCT_NAME = "힘메모";
+				PRODUCT_NAME = himMemo;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -352,7 +352,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = damu.HimMemo;
-				PRODUCT_NAME = "힘메모";
+				PRODUCT_NAME = himMemo;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
