@@ -91,12 +91,12 @@
 				76F3556B247CFAE800512015 /* SceneDelegate.swift */,
 				765D32AC247F9F9B003167A7 /* MemoListTableViewController.swift */,
 				765D32AE2480F01B003167A7 /* ComposeViewController.swift */,
+				768734EC24816704006EFCD7 /* DetailViewController.swift */,
 				76F3556F247CFAE800512015 /* Main.storyboard */,
 				76F35575247CFAEA00512015 /* Assets.xcassets */,
 				76F35577247CFAEA00512015 /* LaunchScreen.storyboard */,
 				76F3557A247CFAEA00512015 /* Info.plist */,
 				76F35572247CFAE800512015 /* HimMemo.xcdatamodeld */,
-				768734EC24816704006EFCD7 /* DetailViewController.swift */,
 			);
 			path = HimMemo;
 			sourceTree = "<group>";

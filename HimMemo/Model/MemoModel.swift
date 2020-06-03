@@ -10,17 +10,13 @@ import Foundation
 
 class MemoModel {
     
-    var content: String
-    var insertDate: Date
-    
-    init(content: String) {
-        self.content = content
-        insertDate = Date()
-    }
-    
-    static var dummyMemoList = [
-    MemoModel(content: "Lorem Ipsum"),
-    MemoModel(content: "스타벅스 커피")
-    ]
+//    var content: String
+//    var insertDate: Date
+//    
+//    init(content: String) {
+//        self.content = content
+//        insertDate = Date()
+//    }
+
 
 }

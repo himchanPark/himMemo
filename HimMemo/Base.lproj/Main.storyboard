@@ -67,7 +67,7 @@
             <objects>
                 <navigationController id="TrV-mv-ccI" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="pvy-Id-e3o">
-                        <rect key="frame" x="0.0" y="44" width="375" height="96"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="104.33333333333334"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -86,7 +86,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="동해물과 백두산이" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xEK-eo-RBj">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="동" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xEK-eo-RBj">
                                 <rect key="frame" x="0.0" y="56" width="375" height="702"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -116,7 +116,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="memeTextView" destination="xEK-eo-RBj" id="Dt7-6n-SCw"/>
+                        <outlet property="memoTextView" destination="xEK-eo-RBj" id="cAY-Lw-WZo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5di-Av-piP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -152,7 +152,11 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wkl-sK-5In">
                                 <rect key="frame" x="0.0" y="763" width="375" height="49"/>
                                 <items>
-                                    <barButtonItem title="Item" id="gmf-qA-qvz"/>
+                                    <barButtonItem systemItem="compose" id="gmf-qA-qvz">
+                                        <connections>
+                                            <segue destination="YnD-HL-cZL" kind="presentation" identifier="" id="p2K-TR-97b"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iJE-XO-P7d">
@@ -213,10 +217,16 @@
                         <viewLayoutGuide key="safeArea" id="ewB-Ky-io5"/>
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="2cq-W6-6CX"/>
+                    <connections>
+                        <outlet property="memoTableView" destination="iJE-XO-P7d" id="j9N-Po-sob"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n8q-1m-wPI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1048.8" y="235.71428571428572"/>
+            <point key="canvasLocation" x="1049" y="255"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="p2K-TR-97b"/>
+    </inferredMetricsTieBreakers>
 </document>
