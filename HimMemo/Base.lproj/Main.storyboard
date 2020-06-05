@@ -152,6 +152,13 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wkl-sK-5In">
                                 <rect key="frame" x="0.0" y="763" width="375" height="49"/>
                                 <items>
+                                    <barButtonItem systemItem="trash" id="Hoo-Kr-yRl">
+                                        <color key="tintColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="deleteMemo:" destination="UKx-uh-CL6" id="39D-qS-kOc"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="hlT-JQ-7GN"/>
                                     <barButtonItem systemItem="compose" id="gmf-qA-qvz">
                                         <connections>
                                             <segue destination="YnD-HL-cZL" kind="presentation" identifier="" id="p2K-TR-97b"/>
