@@ -66,10 +66,16 @@ class MemoListTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
         let target = DataManager.shared.memoList[indexPath.row]
-        let tableDate = fomatter.string(for: target.insertDate)
-        
         cell.textLabel?.text = target.content
+        
+        let tableDate = fomatter.string(for: target.insertDate)
         cell.detailTextLabel?.text = tableDate
+        
+        if #available(iOS 11.0, *) {
+            cell.detailTextLabel?.textColor = UIColor(named: "myLabelColor")
+        } else {
+            cell.detailTextLabel?.textColor = UIColor.lightGray
+        }
         
         return cell
     }
