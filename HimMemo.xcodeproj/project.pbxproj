@@ -27,6 +27,7 @@
 		768734EA2481491B006EFCD7 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
 		768734EC24816704006EFCD7 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		768EC19D2486304600A0E809 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		7691E28524926A6A002EB900 /* himMemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = himMemo.entitlements; sourceTree = "<group>"; };
 		7698892F247EB4DF00404670 /* MemoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoModel.swift; sourceTree = "<group>"; };
 		76F35566247CFAE800512015 /* himMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = himMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76F35569247CFAE800512015 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +86,7 @@
 		76F35568247CFAE800512015 /* HimMemo */ = {
 			isa = PBXGroup;
 			children = (
+				7691E28524926A6A002EB900 /* himMemo.entitlements */,
 				768EC19C2486301500A0E809 /* Data */,
 				7698892E247EB4C600404670 /* Model */,
 				76F35569247CFAE800512015 /* AppDelegate.swift */,
@@ -324,6 +326,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HimMemo/himMemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 944595JNCH;
 				INFOPLIST_FILE = HimMemo/Info.plist;
@@ -334,8 +337,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = damu.HimMemo;
 				PRODUCT_NAME = himMemo;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -343,6 +347,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HimMemo/himMemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 944595JNCH;
 				INFOPLIST_FILE = HimMemo/Info.plist;
@@ -353,8 +358,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = damu.HimMemo;
 				PRODUCT_NAME = himMemo;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
